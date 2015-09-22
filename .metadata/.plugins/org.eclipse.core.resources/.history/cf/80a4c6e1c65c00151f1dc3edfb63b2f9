@@ -1,0 +1,40 @@
+package Other;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class Validation {
+
+//	public String login() {
+//
+//	}
+//
+//	public String password() {
+//
+//	}
+//
+//	public String mail() {
+//
+//	}
+//
+//	public String name() {
+//
+//	}
+//
+//	public String surname() {
+//
+//	}
+	
+	// (([A-Za-z0-9]+)(.[A-Za-z0-9]+@)([A-Za-z0-9]+)+(.[A-Za-z0-9]+)+(.[A-Za-z]+))
+//			Pattern pattern = Pattern.compile("(([A-Za-z0-9]+)(.[A-Za-z0-9]+@)([A-Za-z0-9]+)+(.[A-Za-z0-9]+)+(.[A-Za-z]+))");
+//			Matcher matcher = pattern.matcher(userdata.getMail());
+//			if(matcher.matches())
+//				System.out.println("Validne");
+//			else
+//				System.out.println("Nevalidne");
+			
+
+}

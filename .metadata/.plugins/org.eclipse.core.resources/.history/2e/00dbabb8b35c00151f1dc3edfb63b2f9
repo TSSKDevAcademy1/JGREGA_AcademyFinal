@@ -1,0 +1,11 @@
+package database;
+
+import userPack.User;
+
+public interface dateInter {
+
+	void save(User userdata);
+	
+	String load(); //String load();
+
+}

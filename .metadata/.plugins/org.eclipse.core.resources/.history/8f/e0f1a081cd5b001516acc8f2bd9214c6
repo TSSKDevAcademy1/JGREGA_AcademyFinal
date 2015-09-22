@@ -1,0 +1,15 @@
+package test;
+
+public class Service {	
+		
+		public void saveTvSerial(TextModel model){
+			JpaHelper.beginTransaction();
+			JpaHelper.getEntityManager().persist(model);
+			System.out.println("After persist");
+			
+			//company entity is managed
+			JpaHelper.commitTransaction();
+			// company entity is detached
+		}		
+		
+	}

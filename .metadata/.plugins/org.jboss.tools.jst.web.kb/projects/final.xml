@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/Ján/.m2/repository/org/hibernate/hibernate-core/4.1.9.Final/hibernate-core-4.1.9.Final.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/com/sun/faces/jsf-api/2.2.10/jsf-api-2.2.10.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-expression/3.1.0.RELEASE/spring-expression-3.1.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/javassist/javassist/3.17.1-GA/javassist-3.17.1-GA.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/apache/tomcat/catalina/6.0.41/catalina-6.0.41.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/apache/tomcat/coyote/6.0.41/coyote-6.0.41.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/apache/tomcat/servlet-api/6.0.41/servlet-api-6.0.41.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/apache/tomcat/annotations-api/6.0.41/annotations-api-6.0.41.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/hibernate/hibernate-entitymanager/4.1.9.Final/hibernate-entitymanager-4.1.9.Final.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-tx/3.2.0.RELEASE/spring-tx-3.2.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-context/3.1.0.RELEASE/spring-context-3.1.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-asm/3.1.0.RELEASE/spring-asm-3.1.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0-rt.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0-rt.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fn.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/permittedtaglibs.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/scriptfree.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0-rt.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0-rt.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x.tld" project="final"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Ján/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/data/spring-data-jpa/1.3.0.RELEASE/spring-data-jpa-1.3.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.1/jcl-over-slf4j-1.7.1.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/apache/tomcat/juli/6.0.41/juli-6.0.41.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/com/sun/faces/jsf-impl/2.2.10/jsf-impl-2.2.10.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/meta-inf/html_basic.tld" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/meta-inf/jsf_core.tld" project="final"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/meta-inf/mojarra_ext.taglib.xml" project="final"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/meta-inf/mojarra_ext.tld" project="final"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="final"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="final"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="final"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="final"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="final"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="final"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl-2.2.10.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="final"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/data/spring-data-commons/1.5.0.RELEASE/spring-data-commons-1.5.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-orm/3.2.0.RELEASE/spring-orm-3.2.0.RELEASE.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/aspectj/aspectjrt/1.7.1/aspectjrt-1.7.1.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar"/>
+  <path value="C:/Users/Ján/.m2/repository/org/springframework/spring-jdbc/3.2.0.RELEASE/spring-jdbc-3.2.0.RELEASE.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource declaration="true" name="%1;" path="%0"/>
+  </core>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="26" name="%2" offset="578" path="%3"/>
+   <linked-el length="39" name="%4" offset="2448" path="%5"/>
+   <linked-el length="33" name="%4" offset="2031" path="%5"/>
+   <linked-el length="39" name="%4" offset="1427" path="%6"/>
+   <linked-el length="29" name="%4" offset="946" path="%5"/>
+   <linked-el length="33" name="%4" offset="1236" path="%6"/>
+   <linked-el length="37" name="%4" offset="773" path="%7"/>
+   <linked-el length="29" name="%4" offset="1523" path="%5"/>
+   <linked-el length="32" name="%4" offset="1238" path="%5"/>
+   <linked-el length="30" name="%4" offset="664" path="%5"/>
+   <linked-el length="29" name="%4" offset="957" path="%6"/>
+   <linked-el length="30" name="%4" offset="478" path="%6"/>
+   <linked-el length="29" name="%4" offset="635" path="%6"/>
+   <linked-el length="32" name="%4" offset="796" path="%6"/>
+   <linked-el length="35" name="%4" offset="1112" path="%6"/>
+   <linked-el length="32" name="%4" offset="1149" path="%5"/>
+   <linked-el length="29" name="%4" offset="1440" path="%5"/>
+   <linked-el length="29" name="%4" offset="863" path="%5"/>
+   <linked-el length="35" name="%4" offset="1727" path="%5"/>
+   <linked-el length="30" name="%4" offset="580" path="%5"/>
+   <linked-el length="35" name="%4" offset="1861" path="%5"/>
+   <linked-el length="33" name="%4" offset="893" path="%7"/>
+   <linked-el length="33" name="%4" offset="2124" path="%5"/>
+   <linked-el length="61" name="%8" offset="364" path="%9"/>
+   <linked-el length="25" name="%8" offset="450" path="%9"/>
+   <linked-el length="23" name="%8" offset="226" path="%9"/>
+   <linked-el length="70" name="%8" offset="293" path="%9"/>
+   <linked-el length="61" name="%10" offset="364" path="%9"/>
+   <linked-el length="70" name="%10" offset="293" path="%9"/>
+   <linked-el length="26" name="%11" offset="578" path="%3"/>
+   <linked-el length="39" name="%0" offset="2448" path="%5"/>
+   <linked-el length="39" name="%0" offset="1427" path="%6"/>
+   <linked-el length="33" name="%0" offset="1236" path="%6"/>
+   <linked-el length="37" name="%0" offset="773" path="%7"/>
+   <linked-el length="29" name="%0" offset="1029" path="%7"/>
+   <linked-el length="32" name="%0" offset="1238" path="%5"/>
+   <linked-el length="30" name="%0" offset="664" path="%5"/>
+   <linked-el length="26" name="%0" offset="694" path="%12"/>
+   <linked-el length="28" name="%0" offset="650" path="%7"/>
+   <linked-el length="30" name="%0" offset="478" path="%6"/>
+   <linked-el length="32" name="%0" offset="796" path="%6"/>
+   <linked-el length="33" name="%0" offset="563" path="%12"/>
+   <linked-el length="35" name="%0" offset="1112" path="%6"/>
+   <linked-el length="29" name="%0" offset="1440" path="%5"/>
+   <linked-el length="29" name="%0" offset="863" path="%5"/>
+   <linked-el length="24" name="%0" offset="2532" path="%5"/>
+   <linked-el length="22" name="%0" offset="1511" path="%6"/>
+   <linked-el length="33" name="%0" offset="2031" path="%5"/>
+   <linked-el length="29" name="%0" offset="946" path="%5"/>
+   <linked-el length="29" name="%0" offset="1523" path="%5"/>
+   <linked-el length="29" name="%0" offset="957" path="%6"/>
+   <linked-el length="29" name="%0" offset="635" path="%6"/>
+   <linked-el length="29" name="%0" offset="2681" path="%5"/>
+   <linked-el length="25" name="%0" offset="979" path="%12"/>
+   <linked-el length="70" name="%0" offset="293" path="%9"/>
+   <linked-el length="25" name="%0" offset="556" path="%7"/>
+   <linked-el length="32" name="%0" offset="1149" path="%5"/>
+   <linked-el length="35" name="%0" offset="1727" path="%5"/>
+   <linked-el length="54" name="%0" offset="693" path="%7"/>
+   <linked-el length="30" name="%0" offset="580" path="%5"/>
+   <linked-el length="35" name="%0" offset="1861" path="%5"/>
+   <linked-el length="29" name="%0" offset="903" path="%12"/>
+   <linked-el length="33" name="%0" offset="893" path="%7"/>
+   <linked-el length="33" name="%0" offset="2124" path="%5"/>
+   <linked-el length="27" name="%13" offset="720" path="%5"/>
+   <linked-el length="29" name="%13" offset="1296" path="%5"/>
+   <linked-el length="27" name="%13" offset="534" path="%6"/>
+   <linked-el length="29" name="%13" offset="854" path="%6"/>
+   <linked-el length="26" name="%13" offset="1012" path="%6"/>
+   <linked-el length="26" name="%13" offset="690" path="%6"/>
+   <linked-el length="23" name="%13" offset="1798" path="%5"/>
+   <linked-el length="30" name="%13" offset="1295" path="%6"/>
+   <linked-el length="30" name="%13" offset="2183" path="%5"/>
+   <linked-el length="26" name="%13" offset="1578" path="%5"/>
+   <linked-el length="26" name="%13" offset="1001" path="%5"/>
+   <linked-el length="28" name="%14" offset="650" path="%7"/>
+   <linked-el length="25" name="%14" offset="556" path="%7"/>
+   <linked-el length="61" name="%15" offset="364" path="%9"/>
+   <linked-el length="70" name="%15" offset="293" path="%9"/>
+   <linked-el length="61" name="%16" offset="364" path="%9"/>
+   <linked-el length="23" name="%16" offset="226" path="%9"/>
+   <linked-el length="70" name="%16" offset="293" path="%9"/>
+   <linked-el length="39" name="%1" offset="2448" path="%5"/>
+   <linked-el length="39" name="%1" offset="1427" path="%6"/>
+   <linked-el length="33" name="%1" offset="1236" path="%6"/>
+   <linked-el length="37" name="%1" offset="773" path="%7"/>
+   <linked-el length="29" name="%1" offset="1029" path="%7"/>
+   <linked-el length="32" name="%1" offset="1238" path="%5"/>
+   <linked-el length="30" name="%1" offset="664" path="%5"/>
+   <linked-el length="26" name="%1" offset="694" path="%12"/>
+   <linked-el length="28" name="%1" offset="650" path="%7"/>
+   <linked-el length="30" name="%1" offset="478" path="%6"/>
+   <linked-el length="32" name="%1" offset="796" path="%6"/>
+   <linked-el length="33" name="%1" offset="563" path="%12"/>
+   <linked-el length="35" name="%1" offset="1112" path="%6"/>
+   <linked-el length="29" name="%1" offset="1440" path="%5"/>
+   <linked-el length="29" name="%1" offset="863" path="%5"/>
+   <linked-el length="24" name="%1" offset="2532" path="%5"/>
+   <linked-el length="22" name="%1" offset="1511" path="%6"/>
+   <linked-el length="33" name="%1" offset="2031" path="%5"/>
+   <linked-el length="29" name="%1" offset="946" path="%5"/>
+   <linked-el length="29" name="%1" offset="1523" path="%5"/>
+   <linked-el length="29" name="%1" offset="957" path="%6"/>
+   <linked-el length="29" name="%1" offset="635" path="%6"/>
+   <linked-el length="29" name="%1" offset="2681" path="%5"/>
+   <linked-el length="25" name="%1" offset="979" path="%12"/>
+   <linked-el length="70" name="%1" offset="293" path="%9"/>
+   <linked-el length="25" name="%1" offset="556" path="%7"/>
+   <linked-el length="32" name="%1" offset="1149" path="%5"/>
+   <linked-el length="35" name="%1" offset="1727" path="%5"/>
+   <linked-el length="54" name="%1" offset="693" path="%7"/>
+   <linked-el length="30" name="%1" offset="580" path="%5"/>
+   <linked-el length="35" name="%1" offset="1861" path="%5"/>
+   <linked-el length="29" name="%1" offset="903" path="%12"/>
+   <linked-el length="33" name="%1" offset="893" path="%7"/>
+   <linked-el length="33" name="%1" offset="2124" path="%5"/>
+   <linked-el length="25" name="%17" offset="450" path="%9"/>
+   <linked-el length="27" name="%18" offset="720" path="%5"/>
+   <linked-el length="29" name="%18" offset="1296" path="%5"/>
+   <linked-el length="27" name="%18" offset="534" path="%6"/>
+   <linked-el length="29" name="%18" offset="854" path="%6"/>
+   <linked-el length="26" name="%18" offset="1012" path="%6"/>
+   <linked-el length="26" name="%18" offset="690" path="%6"/>
+   <linked-el length="23" name="%18" offset="1798" path="%5"/>
+   <linked-el length="30" name="%18" offset="1295" path="%6"/>
+   <linked-el length="30" name="%18" offset="2183" path="%5"/>
+   <linked-el length="26" name="%18" offset="1578" path="%5"/>
+   <linked-el length="26" name="%18" offset="1001" path="%5"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="project.basedir" value="%2"/>
+  <alias path="/final/src/main/java/userPack/User.java" value="%4"/>
+  <alias path="/final/src/main/webapp/start.xhtml" value="%7"/>
+  <alias path="/final/src/main/webapp/editUser.xhtml" value="%5"/>
+  <alias path="data" value="%8"/>
+  <alias path="loopIndex" value="%10"/>
+  <alias path="/final/src/main/webapp/structure.xhtml" value="%9"/>
+  <alias path="project" value="%11"/>
+  <alias path="/final/src/main/java/Controlers/Controler.java" value="%0"/>
+  <alias path="/final/src/main/webapp/registration.xhtml" value="%6"/>
+  <alias path="/final/src/main/java/Other/Validation.java" value="%13"/>
+  <alias path="/final/src/main/java/Other/Login.java" value="%14"/>
+  <alias path="loopIndex.index" value="%15"/>
+  <alias path="/final/src/main/java/database/Data.java" value="%16"/>
+  <alias path="controler" value="%1"/>
+  <alias path="/final/src/main/webapp/logged.xhtml" value="%12"/>
+  <alias path="/final/pom.xml" value="%3"/>
+  <alias path="/final/src/main/java/Other/Structure.java" value="%17"/>
+  <alias path="validation" value="%18"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://xmlns.jcp.org/jsp/jstl/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsp/jstl/core">
+   <prefix>c</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>d</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
+</kb-project>

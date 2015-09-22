@@ -1,0 +1,11 @@
+1442318038901	Encapsulate field 'text'
+1442318120520	Rename type 'test'
+1442318128680	Rename type 'Test'
+1442318138667	Rename type 'model'
+1442329036727	Rename type 'Model'
+1442354560306	Extract interface 'manager'
+1442354580433	Rename type 'manager'
+1442426981550	Delete element
+1442435086613	Encapsulate field 'login'
+1442435091858	Encapsulate field 'password'
+1442438226636	Delete element

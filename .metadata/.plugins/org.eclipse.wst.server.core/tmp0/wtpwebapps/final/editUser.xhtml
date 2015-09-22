@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsp/jstl/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+<h:head>
+
+</h:head>
+
+<h:body>
+	<h1>Welcome to Edit User Data Page</h1>
+
+	<h:form>
+		<h:outputText value="Login:" style="color:red" />      
+      Actual Value: [<h:outputText value="#{controler.userdata.login}" />]
+      <br></br>
+		<h:inputText id="login" value="#{controler.userdata.login}" />
+		<h:outputText value="#{validation.loginVal()}" />
+		<br></br>
+
+
+		<h:outputText value=" Name:" style="color:red" />
+       Actual Value: [<h:outputText value="#{controler.userdata.name}" />]
+       <br></br>
+		<h:inputText id="name" value="#{controler.userdata.name}" />
+		<h:outputText value="#{validation.nameVal()}" />
+		<br></br>
+
+
+		<h:outputText value="Surname:" style="color:red" />
+       Actual Value: [<h:outputText
+			value="#{controler.userdata.surname}" />]
+       <br></br>
+		<h:inputText id="surname" value="#{controler.userdata.surname}" />
+		<h:outputText value="#{validation.surnameVal()}" />
+		<br></br>
+
+
+		<h:outputText value="Mail:" style="color:red" />
+       Actual Value: [<h:outputText value="#{controler.userdata.mail}" />]
+       <br></br>
+		<h:inputText id="mail" value="#{controler.userdata.mail}" />
+		<h:outputText value="#{validation.mailVal()}" />
+		<br></br>
+
+		<h:outputText value="Manager_id:" style="color:red" />
+       Actual Value: [<h:outputText
+			value="#{controler.userdata.manager_id}" />]
+       <br></br>
+		<c:if test="#{validation.manId()}">
+			<h:inputText id="managerId" value="#{controler.userdata.manager_id}" />
+		</c:if>
+		<br></br>
+
+
+		<h:outputText value=" Password:" style="color:red" />
+       Actual Value: [<h:outputText
+			value="#{controler.userdata.password}" />]
+       <br></br>
+		<h:inputSecret id="password" value="#{controler.userdata.password}" />
+		<h:outputText value="#{validation.passwordVal()}" />
+		<br></br>
+
+
+		<h:outputText value="Repeat Password:" style="color:red" />
+		<br></br>
+		<!--  Actual Value: [<h:outputText value="#{controler.userdata.repeatPassword}" />] -->
+		<h:inputSecret id="repeatpassword"
+			value="#{controler.userdata.repeatPassword}" />
+		<br></br>
+
+		<h:commandButton action="#{controler.update()}" value="Update!" />
+
+	</h:form>
+
+	<h:form>
+		<h:commandButton id="btn1" action="start" value="LogOut"
+			actionListener="#{controler.commandClicked}"></h:commandButton>
+	</h:form>
+
+</h:body>
+
+
+</html>

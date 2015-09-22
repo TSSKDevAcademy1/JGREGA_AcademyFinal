@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsp/jstl/core">
+<h:head>
+
+</h:head>
+
+<h:body>
+	<h1>Please Registrate!!</h1>
+
+	<h:form>
+      Login Name:
+      <h:inputText id="login" value="#{controler.userdata.login}" />
+		<!-- value="{controler.userdata.login}" -->
+		<h:outputText value="#{validation.loginVal()}" />
+		<br></br>
+      
+      Name:
+       <h:inputText id="name" value="#{controler.userdata.name}" />
+		<!-- value="{controler.userdata.name" -->
+		<h:outputText value="#{validation.nameVal()}" />
+		<br></br>
+      
+      Surname:
+       <h:inputText id="surname" value="#{controler.userdata.surname}" />
+		<!-- value="{controler.userdata.surname}" -->
+		<h:outputText value="#{validation.surnameVal()}" />
+		<br></br>
+      
+      Mail:
+       <h:inputText id="mail" value="#{controler.userdata.mail}" />
+		<!-- value="{controler.userdata.mail}" -->
+		<h:outputText value="#{validation.mailVal()}" />
+		<br></br>
+		
+	  Manager Id:
+       <h:inputSecret id="ManId"
+			value="#{controler.userdata.manager_id}" />
+		<!-- value="{controler.userdata.password}" -->
+		<!-- <h:outputText value="#{validation.passwordVal()}" /> -->
+		<br></br> 
+      
+      Password:
+       <h:inputSecret id="password"
+			value="#{controler.userdata.password}" />
+		<!-- value="{controler.userdata.password}" -->
+		<h:outputText value="#{validation.passwordVal()}" />
+		<br></br>
+       
+      Repeat Password:
+       <h:inputSecret id="repeatpassword"
+			value="#{controler.userdata.repeatPassword}" />
+		<!-- value="{controler.userdata.repeatPassword}" -->
+		<br></br>
+
+		<h:commandButton action="#{controler.save()}" value="Reg!" />
+		<br></br>
+		<h:link value="BackToLoginPage" outcome="start" />
+		<br></br>
+	</h:form>
+</h:body>
+
+</html>

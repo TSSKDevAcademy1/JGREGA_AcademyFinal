@@ -1,0 +1,169 @@
+package Controlers;
+
+import java.awt.Event;
+import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.annotation.PostConstruct;
+import javax.enterprise.inject.Model;
+import javax.enterprise.inject.Produces;
+import javax.faces.bean.ManagedBean;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import Other.Login;
+import Other.Structure;
+import Other.Validation;
+import database.Data;
+import userPack.User;
+
+
+
+@ManagedBean
+@Model
+public class Controler {
+	
+//	private String login,password,mail,name,surnanme;	
+	
+	User userdata = User.getInstance();
+	
+	Login log = Login.getInstance();
+
+	public void print(){		
+		System.out.println("hello");		
+	}
+	
+	public void save(){ // tu urobit validaciu
+		Data datas = new Data();
+		Validation validation = new Validation();
+		
+		if(validation.mail() && validation.login() && validation.password() && validation.name() && validation.surname() &&(userdata.getRepeatPassword()).equals(userdata.getPassword())){ 
+		datas.save(userdata);
+		}else{
+			System.out.print("Bad inputs");
+		}
+	}
+		
+	public void update(){
+		Data datas = new Data();
+		Validation validation = new Validation();
+//		datas.update(userdata);
+		if(validation.mail() && validation.login() && validation.password() && validation.name() && validation.surname() && validation.manId()
+				&&(userdata.getRepeatPassword()).equals(userdata.getPassword())){
+			datas.update(userdata);
+		}else{
+			System.out.print("Bad inputs");
+		}
+		
+	}
+	
+	public String isFlagged(){
+		Data datas = new Data();
+		datas.loadLogin();
+		
+		if(userdata.isIs_active()){
+			return "now you are logged In!!";
+		}else{
+			return "please login!!";
+		}
+	}
+	
+	public String loggedOut(){
+//		Data datas = new Data();
+//		datas.flagged(false);
+		System.out.println("Aj tak zbehne");
+		return "start";
+	}
+	
+	public String padding(int index){//////////////////////////
+
+		int pixels = 20;
+		
+		return ""+ pixels*index +"px";
+	}
+	
+	///////////////////////////////////////////////////////////
+	public String editable(){
+		Data datas = new Data();
+		datas.loadLogin();		
+		
+		if((log.getLogin()).equals(userdata.getLogin()) && (log.getPassword()).equals(userdata.getPassword())){
+			return "editUser";			
+		}else{
+			return "noLogged";			
+		}
+	}
+	
+/////////////////////////////////////////////////////////////
+	public boolean skusobna(){ 
+		Data datas = new Data();
+		datas.loadLogin();
+		datas.sortedList();
+		if((log.getLogin()).equals(userdata.getLogin()) && (log.getPassword()).equals(userdata.getPassword())){
+			return true;			
+		}else{
+			return false;			
+		}
+	}
+	
+	public boolean sorting(int index){/////////////////////////////////////////////////////
+		Data datas = new Data();
+		datas.load();
+		
+		if(datas.users.size() >= index){
+			return true;
+		}else{
+			return false;
+		}		
+	}
+	
+	public String isRegistred(){		
+	
+		Data datas = new Data();
+		datas.load();
+		datas.loadLogin();
+		
+		if((log.getLogin()).equals(userdata.getLogin()) && (log.getPassword()).equals(userdata.getPassword())){
+			datas.flagged(true); /// ak je prihlaseny je flaged
+			return "Welcome "+ userdata.getName() +" " + userdata.getSurname() + " ";				
+		}else{
+			return "You are not registered ";			
+		}
+	}
+	
+	public User getUserdata() {
+		return userdata;
+	}
+
+	public void setUserdata(User userdata) {
+		this.userdata = userdata;
+	}
+	
+	public Login getLog() {
+		return log;
+	}
+
+	public void setLog(Login log) {
+		this.log = log;
+	}
+	
+	
+	private int buttonId;
+	/* getters and setters for buttonId goes here */
+
+	public void commandClicked(ActionEvent event) {
+	  /* retrieve buttonId which you clicked */
+	  buttonId = event.getID();
+	 	System.out.println("zbehne");
+	  /*check for which button you clicked*/
+	 /* if(buttonId.equals("btn1")){
+
+	  }else{
+
+	  }*/
+	}
+	
+}

@@ -1,0 +1,76 @@
+package test;
+
+
+import javax.annotation.PostConstruct;
+import javax.enterprise.inject.Model;
+import javax.enterprise.inject.Produces;
+import javax.faces.bean.ManagedBean;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+
+@ManagedBean
+//@Named
+//@RequestScoped
+@Model
+public class Controler {		
+	
+	@Produces
+	@Named
+	private TextModel modelis;	
+	
+	@Inject
+	private TextModel moddel;
+	
+	private Service service;
+	
+	@PostConstruct
+	public void initNewRegistration() {
+		modelis = new TextModel();
+	}
+	
+	public String getUserText(){
+		return "ok";
+	} 
+	
+//	public void setText(String text){
+//		model.setText(text);
+//	}
+//	
+//	public void printText(){
+//		System.out.println(model.getText());
+//	}
+//	
+	public String textOutput(){
+		System.out.println(modelis.getText());
+		
+		if(modelis.getText() == null){
+			return "None";
+		}else{
+		service.saveTvSerial();
+		return modelis.getText();
+		}
+	}
+	
+	public void Save(){
+		System.out.println(modelis.getText());
+		service.saveTvSerial(modelis);
+	}
+	
+	public void printText(){
+		System.out.println(modelis.getText());
+	}
+
+	public TextModel getModelis() {
+		return modelis;
+	}
+
+	public void setModelis(TextModel modelis) {
+		this.modelis = modelis;
+	}
+	
+//	public void setText(){
+//		model.setText(text);
+//	}
+
+}

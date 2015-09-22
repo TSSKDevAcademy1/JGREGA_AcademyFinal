@@ -1,0 +1,83 @@
+package Other;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.faces.bean.ManagedBean;
+import javax.inject.Named;
+
+import userPack.User;
+
+@ManagedBean
+@Named
+public class Validation {
+	
+	User userdata = User.getInstance();
+	
+	public String login,password,mail,name,surname;
+	
+	public boolean mail(){
+		Pattern pattern = Pattern.compile("(([A-Za-z0-9]+)(.[A-Za-z0-9]+@)([A-Za-z0-9]+)+(.[A-Za-z0-9]+)+(.[A-Za-z]+))");
+		Matcher matcher = pattern.matcher(userdata.getMail());
+		if(matcher.matches()){
+			mail = "Valid";
+			return true;
+		}else{
+			mail = "Invalid";
+			return false;
+		}
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getMail() {
+		return mail;
+	}
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSurname() {
+		return surname;
+	}
+
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+	
+
+	
+	
+	// (([A-Za-z0-9]+)(.[A-Za-z0-9]+@)([A-Za-z0-9]+)+(.[A-Za-z0-9]+)+(.[A-Za-z]+))
+//			Pattern pattern = Pattern.compile("(([A-Za-z0-9]+)(.[A-Za-z0-9]+@)([A-Za-z0-9]+)+(.[A-Za-z0-9]+)+(.[A-Za-z]+))");
+//			Matcher matcher = pattern.matcher(userdata.getMail());
+//			if(matcher.matches())
+//				System.out.println("Validne");
+//			else
+//				System.out.println("Nevalidne");
+			
+
+}

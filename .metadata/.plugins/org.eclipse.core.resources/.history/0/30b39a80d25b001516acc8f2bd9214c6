@@ -1,0 +1,24 @@
+package test;
+
+import javax.enterprise.inject.Model;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+@Model
+public class Service {	
+	
+	@Inject
+	private TextModel model; 
+		
+		public void saveTvSerial(){
+			JpaHelper.beginTransaction();
+			System.out.println("Before persist");
+			JpaHelper.getEntityManager().persist(model);
+			System.out.println("After persist");
+			
+			//company entity is managed
+			JpaHelper.commitTransaction();
+			// company entity is detached
+		}		
+		
+	}
